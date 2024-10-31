@@ -33,6 +33,162 @@ const PATTERNS = [
   'Every 3rd Col',
 ];
 
+const numberPatterns = {
+  0: [
+    [0, 0, 0],
+    [0, 1, 0],
+    [0, 1, 0],
+    [0, 1, 0],
+    [0, 0, 0]
+  ],
+  1: [
+    [1, 0, 1],
+    [0, 0, 1],
+    [1, 0, 1],
+    [1, 0, 1],
+    [0, 0, 0]
+  ],
+  2: [
+    [0, 0, 0],
+    [1, 1, 0],
+    [0, 0, 0],
+    [0, 1, 1],
+    [0, 0, 0]
+  ],
+  3: [
+    [0, 0, 0],
+    [1, 1, 0],
+    [0, 0, 0],
+    [1, 1, 0],
+    [0, 0, 0]
+  ],
+  4: [
+    [0, 1, 0],
+    [0, 1, 0],
+    [0, 0, 0],
+    [1, 1, 0],
+    [1, 1, 0]
+  ],
+  5: [
+    [0, 0, 0],
+    [0, 1, 1],
+    [0, 0, 0],
+    [1, 1, 0],
+    [0, 0, 0]
+  ],
+  6: [
+    [0, 0, 0],
+    [0, 1, 1],
+    [0, 0, 0],
+    [0, 1, 0],
+    [0, 0, 0]
+  ],
+  7: [
+    [0, 0, 0],
+    [1, 1, 0],
+    [1, 0, 1],
+    [1, 0, 1],
+    [1, 0, 1]
+  ],
+  8: [
+    [0, 0, 0],
+    [0, 1, 0],
+    [0, 0, 0],
+    [0, 1, 0],
+    [0, 0, 0]
+  ],
+  9: [
+    [0, 0, 0],
+    [0, 1, 0],
+    [0, 0, 0],
+    [1, 1, 0],
+    [0, 0, 0]
+  ],
+  10: [
+    [1, 0, 1, 1, 0, 0, 0],
+    [0, 0, 1, 1, 0, 1, 0],
+    [1, 0, 1, 1, 0, 1, 0],
+    [1, 0, 1, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0, 0, 0]
+  ],
+  11: [
+    [1, 0, 1, 1, 1, 0, 1],
+    [0, 0, 1, 1, 0, 0, 1],
+    [1, 0, 1, 1, 1, 0, 1],
+    [1, 0, 1, 1, 1, 0, 1],
+    [0, 0, 0, 1, 0, 0, 0]
+  ],
+  12: [
+    [1, 0, 1, 1, 0, 0, 0],
+    [0, 0, 1, 1, 1, 1, 0],
+    [1, 0, 1, 1, 0, 0, 0],
+    [1, 0, 1, 1, 0, 1, 1],
+    [0, 0, 0, 1, 0, 0, 0]
+  ],
+  13: [
+    [1, 0, 1, 1, 0, 0, 0],
+    [0, 0, 1, 1, 1, 1, 0],
+    [1, 0, 1, 1, 0, 0, 0],
+    [1, 0, 1, 1, 1, 1, 0],
+    [0, 0, 0, 1, 0, 0, 0]
+  ],
+  14: [
+    [1, 0, 1, 1, 0, 1, 0],
+    [0, 0, 1, 1, 0, 1, 0],
+    [1, 0, 1, 1, 0, 0, 0],
+    [1, 0, 1, 1, 1, 1, 0],
+    [0, 0, 0, 1, 1, 1, 0]
+  ],
+  15: [
+    [1, 0, 1, 1, 0, 0, 0],
+    [0, 0, 1, 1, 0, 1, 1],
+    [1, 0, 1, 1, 0, 0, 0],
+    [1, 0, 1, 1, 1, 1, 0],
+    [0, 0, 0, 1, 0, 0, 0]
+  ],
+  16: [
+    [1, 0, 1, 1, 0, 0, 0],
+    [0, 0, 1, 1, 0, 1, 1],
+    [1, 0, 1, 1, 0, 0, 0],
+    [1, 0, 1, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0, 0, 0]
+  ],
+  17: [
+    [1, 0, 1, 1, 0, 0, 0],
+    [0, 0, 1, 1, 1, 1, 0],
+    [1, 0, 1, 1, 1, 0, 1],
+    [1, 0, 1, 1, 1, 0, 1],
+    [0, 0, 0, 1, 1, 0, 1]
+  ],
+  18: [
+    [1, 0, 1, 1, 0, 0, 0],
+    [0, 0, 1, 1, 0, 1, 0],
+    [1, 0, 1, 1, 0, 0, 0],
+    [1, 0, 1, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0, 0, 0]
+  ],
+  19: [
+    [1, 0, 1, 1, 0, 0, 0],
+    [0, 0, 1, 1, 0, 1, 0],
+    [1, 0, 1, 1, 0, 0, 0],
+    [1, 0, 1, 1, 1, 1, 0],
+    [0, 0, 0, 1, 0, 0, 0]
+  ],
+  20: [
+    [0, 0, 0, 1, 0, 0, 0],
+    [1, 1, 0, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0, 1, 0],
+    [0, 1, 1, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0, 0, 0]
+  ]
+};
+
+
+
+const { repeatConnect, requestPixel, getPixel, Color } = pixelsWebConnect;
+
+let systemIds = [];
+
 var matrix_left;
 var matrix_right;
 var $table_left;
@@ -43,7 +199,7 @@ let portLeft = null;
 let portRight = null;
 let swap = false;
 
-$(function() {
+$(function () {
   matrix_left = createArray(34, 9);
   matrix_right = createArray(34, 9);
   updateTableLeft();
@@ -52,14 +208,14 @@ $(function() {
 
   for (pattern of PATTERNS) {
     $("#select-left").append(`<option value="${pattern}">${pattern}</option>`);
-    $("#select-left").on("change", async function() {
+    $("#select-left").on("change", async function () {
       if (pattern == 'Custom') return;
       drawPattern(matrix_left, $(this).val(), 'left');
       await sendToDisplay(true);
     });
 
     $("#select-right").append(`<option value="${pattern}">${pattern}</option>`);
-    $("#select-right").on("change", async function() {
+    $("#select-right").on("change", async function () {
       if (pattern == 'Custom') return;
       drawPattern(matrix_right, $(this).val(), 'right');
       await sendToDisplay(true);
@@ -78,20 +234,20 @@ function drawPattern(matrix, pattern, pos) {
         if (row % 2 == 0)
           matrix[row][col] = col % 2 == 0;
         else
-          matrix[row][col] = (col+1) % 2 == 0;
+          matrix[row][col] = (col + 1) % 2 == 0;
       } else if (pattern == 'Double Checkerboard') {
         if (row % 4 < 2)
-          matrix[row][col] = (col+2) % 4 < 2;
+          matrix[row][col] = (col + 2) % 4 < 2;
         else
           matrix[row][col] = (col) % 4 < 2;
       } else if (pattern == 'Every 2nd Row') {
-          matrix[row][col] = row % 2 != 0;
+        matrix[row][col] = row % 2 != 0;
       } else if (pattern == 'Every 3rd Row') {
-          matrix[row][col] = row % 3 != 0;
+        matrix[row][col] = row % 3 != 0;
       } else if (pattern == 'Every 2nd Col') {
-          matrix[row][col] = col % 2 != 0;
+        matrix[row][col] = col % 2 != 0;
       } else if (pattern == 'Every 3rd Col') {
-          matrix[row][col] = col % 3 != 0;
+        matrix[row][col] = col % 3 != 0;
       }
     }
   }
@@ -112,65 +268,66 @@ function updateMatrix(matrix, pos) {
 }
 
 function updateTableLeft() {
-	var width = matrix_left[0].length;
-	var height = matrix_left.length;
+  var width = matrix_left[0].length;
+  var height = matrix_left.length;
 
   $table_left = populateTable(null, height, width, "left");
-	$('#led-grid_left').html('');
-	$('#led-grid_left').append($table_left);
+  $('#led-grid_left').html('');
+  $('#led-grid_left').append($table_left);
 
-	// events
-	$table_left.on("mousedown", "td", toggleLeft);
-    $table_left.on("mouseenter", "td", toggleLeft);
-    $table_left.on("dragstart", function() { return false; });
+  // events
+  $table_left.on("mousedown", "td", toggleLeft);
+  $table_left.on("mouseenter", "td", toggleLeft);
+  $table_left.on("dragstart", function () { return false; });
 }
 
 function updateTableRight() {
-	var width = matrix_right[0].length;
-	var height = matrix_right.length;
+  var width = matrix_right[0].length;
+  var height = matrix_right.length;
 
   $table_right = populateTable(null, height, width, "right");
-	$('#led-grid_right').html('');
-	$('#led-grid_right').append($table_right);
+  $('#led-grid_right').html('');
+  $('#led-grid_right').append($table_right);
 
-	// events
-	$table_right.on("mousedown", "td", toggleRight);
+  // events
+  $table_right.on("mousedown", "td", toggleRight);
   $table_right.on("mouseenter", "td", toggleRight);
-  $table_right.on("dragstart", function() { return false; });
+  $table_right.on("dragstart", function () { return false; });
 }
 
 function initOptions() {
-	$('#clearLeftBtn').click(function() {
+  $('#clearLeftBtn').click(function () {
     matrix_left = createArray(matrix_left.length, matrix_left[0].length);
     updateTableLeft();
     sendToDisplay(true);
   });
-	$('#wakeBtn').click(function() {
+  $('#wakeBtn').click(function () {
     wake(portLeft, true);
     wake(portRight, true);
   });
-	$('#sleepBtn').click(function() {
+  $('#sleepBtn').click(function () {
     wake(portLeft, false);
     wake(portRight, false);
   });
-	$('#bootloaderBtn').click(function() {
+  $('#bootloaderBtn').click(function () {
     bootloader(portLeft);
     bootloader(portRight);
   });
-	$('#clearRightBtn').click(function() {
+  $('#clearRightBtn').click(function () {
     matrix_right = createArray(matrix_right.length, matrix_right[0].length);
     updateTableRight();
     sendToDisplay(true);
   });
-	$('#connectLeftBtn').click(connectSerialLeft);
-	$('#connectRightBtn').click(connectSerialRight);
-	$('#swapBtn').click(async function() {
+  $('#connectLeftBtn').click(connectSerialLeft);
+  $('#connectRightBtn').click(connectSerialRight);
+  $('#connectPixelBtn').click(requestMyPixel);
+  $('#swapBtn').click(async function () {
     swap = !swap;
     await sendToDisplay(true);
   });
-	//$('#sendButton').click(sendToDisplay);
-  $(document).on('input change', '#brightnessRange', function() {
-  //$('#brightnessRange').change(function() {
+  //$('#sendButton').click(sendToDisplay);
+  $(document).on('input change', '#brightnessRange', function () {
+    //$('#brightnessRange').change(function() {
     let brightness = $(this).val();
     //console.log("Brightness:", brightness);
     command(portLeft, BRIGHTNESS_CMD, brightness);
@@ -229,8 +386,8 @@ async function checkFirmwareVersion(port, side) {
 }
 
 function prepareValsForDrawingLeft() {
-	const width = matrix_left[0].length;
-	const height = matrix_left.length;
+  const width = matrix_left[0].length;
+  const height = matrix_left.length;
 
   let vals = new Array(39).fill(0);
 
@@ -239,7 +396,7 @@ function prepareValsForDrawingLeft() {
       const cell = matrix_left[row][col];
       if (cell == 0) {
         const i = col + row * width;
-        vals[Math.trunc(i/8)] |= 1 << i % 8;
+        vals[Math.trunc(i / 8)] |= 1 << i % 8;
       }
     }
   }
@@ -247,8 +404,8 @@ function prepareValsForDrawingLeft() {
 }
 
 function prepareValsForDrawingRight() {
-	const width = matrix_right[0].length;
-	const height = matrix_right.length;
+  const width = matrix_right[0].length;
+  const height = matrix_right.length;
 
   let vals = new Array(39).fill(0);
 
@@ -257,7 +414,7 @@ function prepareValsForDrawingRight() {
       const cell = matrix_right[row][col];
       if (cell == 0) {
         const i = col + row * width;
-        vals[Math.trunc(i/8)] |= 1 << i % 8;
+        vals[Math.trunc(i / 8)] |= 1 << i % 8;
       }
     }
   }
@@ -266,8 +423,8 @@ function prepareValsForDrawingRight() {
 
 
 async function sendToDisplay(recurse) {
-    await sendToDisplayLeft(recurse);
-    await sendToDisplayRight(recurse);
+  await sendToDisplayLeft(recurse);
+  await sendToDisplayRight(recurse);
 }
 
 async function sendToDisplayLeft(recurse) {
@@ -323,67 +480,67 @@ async function connectSerialRight() {
 }
 
 function toggleLeft(e) {
-	var x = $(this).data('i');
-	var y = $(this).data('j');
+  var x = $(this).data('i');
+  var y = $(this).data('j');
 
-	if (e.buttons == 1 && !e.ctrlKey) {
-		matrix_left[x][y] = 0;
-		$(this).addClass('off');
-	}
-	else if (e.buttons == 2 || (e.buttons == 1 && e.ctrlKey)) {
-		matrix_left[x][y] = 1;
-		$(this).removeClass('off');
-	}
+  if (e.buttons == 1 && !e.ctrlKey) {
+    matrix_left[x][y] = 0;
+    $(this).addClass('off');
+  }
+  else if (e.buttons == 2 || (e.buttons == 1 && e.ctrlKey)) {
+    matrix_left[x][y] = 1;
+    $(this).removeClass('off');
+  }
 
   sendToDisplay(true);
 
-	return false;
+  return false;
 }
 
 function toggleRight(e) {
-	var x = $(this).data('i');
-	var y = $(this).data('j');
+  var x = $(this).data('i');
+  var y = $(this).data('j');
 
-	if (e.buttons == 1 && !e.ctrlKey) {
-		matrix_right[x][y] = 0;
-		$(this).addClass('off');
-	}
-	else if (e.buttons == 2 || (e.buttons == 1 && e.ctrlKey)) {
-		matrix_right[x][y] = 1;
-		$(this).removeClass('off');
-	}
+  if (e.buttons == 1 && !e.ctrlKey) {
+    matrix_right[x][y] = 0;
+    $(this).addClass('off');
+  }
+  else if (e.buttons == 2 || (e.buttons == 1 && e.ctrlKey)) {
+    matrix_right[x][y] = 1;
+    $(this).removeClass('off');
+  }
 
   sendToDisplay(true);
 
-	return false;
+  return false;
 }
 
 function populateTable(table, rows, cells, pos) {
-    if (!table) table = document.createElement('table');
-    for (var i = 0; i < rows; ++i) {
-        var row = document.createElement('tr');
-        for (var j = 0; j < cells; ++j) {
-            row.appendChild(document.createElement('td'));
-            $(row.cells[j]).data('i', i);
-            $(row.cells[j]).data('j', j);
-            $(row.cells[j]).attr('id', `${pos}-${i}-${j}`);
-        }
-        table.appendChild(row);
+  if (!table) table = document.createElement('table');
+  for (var i = 0; i < rows; ++i) {
+    var row = document.createElement('tr');
+    for (var j = 0; j < cells; ++j) {
+      row.appendChild(document.createElement('td'));
+      $(row.cells[j]).data('i', i);
+      $(row.cells[j]).data('j', j);
+      $(row.cells[j]).attr('id', `${pos}-${i}-${j}`);
     }
-    return $(table);
+    table.appendChild(row);
+  }
+  return $(table);
 }
 
 // (height, width)
 function createArray(length) {
-    var arr = new Array(length || 0),
-        i = length;
+  var arr = new Array(length || 0),
+    i = length;
 
-    if (arguments.length > 1) {
-        var args = Array.prototype.slice.call(arguments, 1);
-        while(i--) arr[length-1 - i] = createArray.apply(this, args);
-    }
+  if (arguments.length > 1) {
+    var args = Array.prototype.slice.call(arguments, 1);
+    while (i--) arr[length - 1 - i] = createArray.apply(this, args);
+  }
 
-    return arr;
+  return arr;
 }
 
 async function wake(port, wake) {
@@ -408,4 +565,161 @@ async function sendCommand(port, commandId, params) {
   await writer.write(data);
   // Allow the serial port to be closed later.
   writer.releaseLock();
+}
+
+
+// --------------------------------------------------------------
+
+async function requestMyPixel() {
+
+  const pixel = await requestPixel();
+
+  handleConnection(pixel);
+}
+
+async function handleConnection(pixel) {
+
+  if (!window.pixels) {
+    window.pixels = [];
+  }
+
+  let systemIds = JSON.parse(localStorage.getItem("pixelsSystemIds"));
+  if (systemIds === null) {
+    systemIds = [];
+  }
+
+  console.log("Connecting...");
+  await repeatConnect(pixel);
+
+  pixel.manualDisconnect = false;
+  pixel.debounceTimeStart = -1;
+  pixel.debounceTimeEnd = -1;
+  pixel.currentlyRollingOrHandling = false;
+
+  if (!containsObject(pixel, window.pixels)) {
+
+    pixel.addEventListener("roll", (face) => {
+      // console.log(`=> rolled face: ${face}`);
+
+      if (pixel.debounceTimeStart !== -1) {
+        if (pixel.debounceTimeEnd - pixel.debounceTimeStart < 1000) {
+          // console.log((debounceTimeEnd - debounceTimeStart));
+          // console.log("Roll too fast, ignoring...");
+          pixel.stopAllAnimations();
+          return;
+        }
+      }
+
+      pixel.debounceTimeStart = -1;
+      pixel.debounceTimeEnd = -1;
+      // For now only D20, other dice in the future when I have my own dice and can explore the data structures :(
+      if (pixel.dieType === "d6pipped") {
+        rollDice("d6", face);
+      } else {
+        rollDice(pixel.dieType, face);
+      }
+    });
+
+    pixel.addEventListener("rollState", (state) => {
+      // console.log(`=> rollState: ${state}`);
+      // console.log(state);
+
+      // if (pixel.dieType === "d10" || pixel.dieType === "d00") {
+      //     if (state.state === "rolling") {
+      //         // check if the other die (d10 or d00) is also rolling
+      //         for (let i = 0; i < window.pixels.length; i++) {
+      //             if ((pixel.dieType === "d00" && window.pixels[i].dieType === "d10" && window.pixels[i].status === "rolling")
+      //                 || (pixel.dieType === "d10" && window.pixels[i].dieType === "d00" && window.pixels[i].status === "rolling")) {
+      //                 d100RollHappening = true;
+      //             }
+      //         }
+      //     }
+      // }
+
+      if ((state.state === "rolling" || state.state === "handling") && !pixel.currentlyRollingOrHandling) {
+        pixel.debounceTimeStart = Date.now();
+        pixel.currentlyRollingOrHandling = true;
+      } else if (!pixel.currentlyRollingOrHandling && state.state === "onFace") {
+        pixel.debounceTimeStart = Date.now();
+        pixel.debounceTimeEnd = Date.now();
+      } else if (state.state === "onFace") {
+        pixel.debounceTimeEnd = Date.now();
+        pixel.currentlyRollingOrHandling = false;
+      }
+    });
+
+    pixel.addEventListener("status", (status) => {
+      // console.log(`=> status: ${status}`);
+
+      if (pixel.manualDisconnect === false) {
+        if (status === "disconnected") {
+          setTimeout(() => {
+            console.log("Reconnecting...");
+            repeatConnect(pixel);
+          }, 1000);
+        }
+      }
+
+      if (status === "ready") {
+        pixel.manualDisconnect = false;
+        lightUpPixel(pixel, "connected");
+        addDieToTable(pixel);
+      }
+    });
+
+    window.pixels.push(pixel);
+  }
+
+  if (!containsObject(pixel.systemId, systemIds) && !!navigator?.bluetooth?.getDevices) {
+    systemIds.push(pixel.systemId);
+    localStorage.setItem("pixelsSystemIds", JSON.stringify(systemIds));
+  }
+}
+
+function rollDice(dieType, face) {
+  let matrix = createArray(34, 9);
+
+  if (face > 9) {
+    displayNumber(matrix, face, 1, 13);
+  } else {
+    displayNumber(matrix, face, 3, 13);
+  }
+}
+
+async function displayNumber(matrix, number, startX, startY) {
+  const pattern = numberPatterns[number];
+  if (!pattern) return; // Falls die Zahl kein Muster hat, überspringen
+
+  let outputMatrix = createArray(34, 9);
+
+  for (let y = 0; y < pattern.length; y++) {
+    for (let x = 0; x < pattern[y].length; x++) {
+      const pixelX = startX + x;
+      const pixelY = startY + y;
+      if (pattern[y][x] === 0) {
+        if (pixelX < matrix[0].length && pixelY < matrix.length) {
+          outputMatrix[pixelY][pixelX] = 0;
+        }
+      }
+    }
+  }
+
+  console.log(outputMatrix);
+
+  matrix_left = outputMatrix;
+  matrix_right = outputMatrix;
+  await sendToDisplay(true);
+  command(portLeft, BRIGHTNESS_CMD, $("#brightnessRange").val());
+  command(portRight, BRIGHTNESS_CMD, $("#brightnessRange").val());
+}
+
+function containsObject(obj, list) {
+  var i;
+  for (i = 0; i < list.length; i++) {
+    if (list[i] === obj) {
+      return true;
+    }
+  }
+
+  return false;
 }
